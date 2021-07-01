@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d5a9f8d1d0484efb8c61bce1089e6fd0" Name="Diagram1">
+        <EntityTypeShape EntityType="BDVeterinariaModel.Consulta" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.DetalleConsulta" Width="1.5" PointX="9.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.Dueño" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.Localidad" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.Mascota" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.Pais" Width="1.5" PointX="1.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.Profesional" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.Provincia" Width="1.5" PointX="1.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.Raza" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.Tipo" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDVeterinariaModel.TipoConsulta" Width="1.5" PointX="7.5" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Consulta_Mascota" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Consulta_Profesional" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_DetalleConsulta_Consulta" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_DetalleConsulta_TipoConsulta" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Dueño_Localidad" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Mascota_Dueño" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Localidad_Provincia" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Profesional_Localidad" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Mascota_Raza" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Mascota_Tipo" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Provincia_Pais" ManuallyRouted="false" />
+        <AssociationConnector Association="BDVeterinariaModel.FK_Raza_Tipo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
