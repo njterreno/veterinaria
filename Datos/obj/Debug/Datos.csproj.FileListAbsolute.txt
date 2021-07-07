@@ -1,0 +1,12 @@
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\bin\Debug\Datos.dll.config
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\bin\Debug\Datos.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\bin\Debug\Datos.pdb
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\bin\Debug\EntityFramework.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\bin\Debug\EntityFramework.xml
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\obj\Debug\Datos.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Datos\obj\Debug\Datos.pdb

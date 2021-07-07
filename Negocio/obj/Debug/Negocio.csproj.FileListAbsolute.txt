@@ -1,0 +1,15 @@
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\Negocio.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\Datos.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\Datos.pdb
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\Datos.dll.config
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\obj\Debug\Negocio.dll
+C:\Users\nata_\Documents\GIT\veterinaria\Negocio\obj\Debug\Negocio.pdb

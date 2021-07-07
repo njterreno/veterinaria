@@ -30,7 +30,7 @@ namespace Presentacion
         {
             InitializeComponent();
 
-            btnNuevoCliente.Enabled = false;
+            //btnNuevoCliente.Enabled = false;
             btnNuevaMascota.Enabled = false;
             Tab.dtpFechaBajaMascota.ShowCheckBox = true;
             Tab.dtpFechaBajaMascota.Checked = false;
@@ -69,9 +69,6 @@ namespace Presentacion
 
         private void btnBuscarDueño_Click(object sender, EventArgs e)
         {
-            btnNuevoCliente.Enabled = true;
-            btnNuevaMascota.Enabled = true;
-
             dgvDatosDueños.Rows.Clear();
 
             if (txtDNIBuscar.Text == "" && txtNombreDueñoBuscar.Text == "")
@@ -95,6 +92,13 @@ namespace Presentacion
                     dgvDatosDueños.Rows.Add(item.IDDueño, item.DNI, item.Nombre, item.Apellido, item.Domicilio, item.Telefono, item.Correo, item.Observaciones, item.Localidad.Nombre);
                 }
             }
+
+            if (dgvDatosDueños.RowCount > 1)
+            {
+                btnNuevaMascota.Enabled = true;
+            }
+            //btnNuevoCliente.Enabled = true;
+            
         }
 
         private void txtNombreDueñoBuscar_TextChanged(object sender, EventArgs e)
@@ -158,35 +162,44 @@ namespace Presentacion
         {
             Tab.chkDarDeBaja.Visible = false;
 
-            int i = dgvDatosDueños.CurrentRow.Index;            
+            //int i = dgvDatosDueños.CurrentRow.Index;
 
-            List<Dueño> listaD = objDueño.LeerDueñoXID(Convert.ToInt32(dgvDatosDueños.Rows[i].Cells[0].Value));
-            foreach (Dueño itemD in listaD)
+            if(dgvDatosDueños.RowCount > 1)
             {
-                Tab.cmbDNIDueñoConsulta.Text = itemD.DNI.ToString();
+                int i = dgvDatosDueños.CurrentRow.Index;
 
-                Tab.cmbDNIDueñoNvaMascota.Text = itemD.DNI.ToString();
+                List<Dueño> listaD = objDueño.LeerDueñoXID(Convert.ToInt32(dgvDatosDueños.Rows[i].Cells[0].Value));
+                foreach (Dueño itemD in listaD)
+                {
+                    Tab.cmbDNIDueñoConsulta.Text = itemD.DNI.ToString();
+
+                    Tab.cmbDNIDueñoNvaMascota.Text = itemD.DNI.ToString();
+                }
+
+                Tab.txtNombreMascota.Text = "";
+                Tab.cmbTipoMascota.SelectedValue = 1;
+                Tab.cmbRazaMascota.SelectedValue = 1;
+                Tab.dtpFechaNacMascota.Value = DateTime.Today;
+                Tab.dtpFechaBajaMascota.ShowCheckBox = true;
+                Tab.dtpFechaBajaMascota.Checked = false;
+                Tab.txtMotivoBajaMascota.Text = "";
+
+                Tab.btnActualizarMascota.Visible = false;
+
+                Tab.btnGuardarNuevaMascota.Visible = true;
+
+                Tab.lblFechaBaja.Visible = false;
+                Tab.lblMotivo.Visible = false;
+                Tab.txtMotivoBajaMascota.Visible = false;
+                Tab.dtpFechaBajaMascota.Visible = false;
+
+
+                Tab.ShowDialog();
             }
-
-            Tab.txtNombreMascota.Text = "";
-            Tab.cmbTipoMascota.SelectedValue = 1;
-            Tab.cmbRazaMascota.SelectedValue = 1;
-            Tab.dtpFechaNacMascota.Value = DateTime.Today;
-            Tab.dtpFechaBajaMascota.ShowCheckBox = true;
-            Tab.dtpFechaBajaMascota.Checked = false;
-            Tab.txtMotivoBajaMascota.Text = "";
-
-            Tab.btnActualizarMascota.Visible = false;
-
-            Tab.btnGuardarNuevaMascota.Visible = true;
-
-            Tab.lblFechaBaja.Visible = false;
-            Tab.lblMotivo.Visible = false;
-            Tab.txtMotivoBajaMascota.Visible = false;
-            Tab.dtpFechaBajaMascota.Visible = false;
-
-
-            Tab.ShowDialog();
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un dueño", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         public void dgvDatosDueños_CellClick(object sender, DataGridViewCellEventArgs e)
